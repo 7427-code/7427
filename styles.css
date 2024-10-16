@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#mode-icon {
+    font-size: 2em;
+    color: #ff00ff; /* Color morado neón */
+}
+
+.hidden {
+    display: none;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 800px;
+    height: 80%;
+    min-height: 600px;
+    background-color: #111111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.chat-box {
+    flex-grow: 1;
+    border: 1px solid #08ff0c;
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: #000000;
+    margin-bottom: 10px;
+    /* Ocultar barra de desplazamiento */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.user {
+    text-align: right;
+    color: blue;
+}
+
+.bot {
+    text-align: left;
+    color: red;
+}
+
+#controls {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #08ff0c;
+    background-color: #111111;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #ffb70d;
+    border: 1px solid #ffb20d;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #ffe70d;
+    border: 1px solid #ffb20d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Estilos para la página de cronómetro */
+#timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#timer {
+    font-size: 5em;
+    margin: 20px 0;
+}
+
+#end-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
